@@ -8,7 +8,7 @@
 ## Install
 
 ```sh
-npm install
+npm i fan-see-comp
 ```
 
 ## Run tests
