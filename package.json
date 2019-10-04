@@ -1,6 +1,6 @@
 {
   "name": "fan-see-comp",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Some beautiful components",
   "main": "dist/index.js",
   "scripts": {

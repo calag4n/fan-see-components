@@ -95,7 +95,7 @@ const Wrapper = styled.div`
 `
 
 const OutlineInput = ({ lineColor, placeholder, width }) => (
-  <Wrapper lineColor={lineColor} width={width}>
+  <Wrapper lineColor={lineColor} width={width?width:'8em'}>
     <input type='text' placeholder={placeholder} />
     <span class='bottom'></span>
     <span class='right'></span>

@@ -21,7 +21,7 @@ const App = () => {
         </p>
         <OutlineInput
           lineColor='#fc2f70'
-          width='6em'
+          // width='6em'
           placeholder='Hey!'
         />
         
