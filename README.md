@@ -1,9 +1,10 @@
 # Welcome to fan-see-comp 👋
+
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
 
 > Some beautiful components
 
-### 🏠 [Homepage](https://github.com/calag4n/fan-see-components)
+**🏠 [Homepage](https://github.com/calag4n/fan-see-components)**
 
 ## Install
 
@@ -11,11 +12,13 @@
 npm i fan-see-comp
 ```
 
-## Run tests
+## Run development
 
 ```sh
-npm run test
+npm run dev
 ```
+
+> With parcel
 
 ## Author
 
@@ -26,7 +29,6 @@ npm run test
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

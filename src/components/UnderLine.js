@@ -1,5 +1,10 @@
+/**
+* @augments {Component<{  children :node.isRequired,>}
+*/
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
+
 
 const Span = styled.span`
   position: relative;
@@ -24,6 +29,10 @@ const Span = styled.span`
 
 const UnderLine = ({ children }) => {
   return <Span>{children}</Span>
+}
+
+UnderLine.propTypes = {
+  children : PropTypes.node.isRequired,
 }
 
 export default UnderLine

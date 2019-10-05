@@ -1,13 +1,19 @@
+/**
+* @augments {Component<{  lineColor:string,  placeholder:string,  width:oneOf(string,number]),
+* height:oneOf(string,number]),  bg:string,  name:string,>}
+*/
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const Wrapper = styled.div`
   position: relative;
   width: ${props => props.width};
+  height: ${props => props.height};
   margin: 0;
   box-sizing: border-box;
 
-  & *{
+  & * {
     box-sizing: border-box;
   }
 
@@ -20,7 +26,7 @@ const Wrapper = styled.div`
     padding: 0.35em 0.45em;
     border: 1px solid transparent;
     transition: background-color 0.3s ease-in-out;
-    
+    height: ${props => props.height};
   }
 
   & input:focus {
@@ -94,14 +100,28 @@ const Wrapper = styled.div`
   }
 `
 
-const OutlineInput = ({ lineColor, placeholder, width }) => (
-  <Wrapper lineColor={lineColor} width={width?width:'8em'}>
-    <input type='text' placeholder={placeholder} />
-    <span class='bottom'></span>
-    <span class='right'></span>
-    <span class='top'></span>
-    <span class='left'></span>
+const OutlineInput = ({ lineColor, placeholder, width, bg, name, height }) => (
+  <Wrapper
+    lineColor={lineColor || '#fc2f70'}
+    width={width || '8em'}
+    bg={bg || 'hsl(236, 32%, 26%)'}
+    height={height || 'unset'}
+  >
+    <input type='text' placeholder={placeholder} name={name} />
+    <span className='bottom' />
+    <span className='right' />
+    <span className='top' />
+    <span className='left' />
   </Wrapper>
 )
+
+OutlineInput.propTypes = {
+  lineColor: PropTypes.string,
+  placeholder: PropTypes.string,
+  width: PropTypes.oneOf([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOf([PropTypes.string, PropTypes.number]),
+  bg: PropTypes.string,
+  name: PropTypes.string,
+}
 
 export default OutlineInput
