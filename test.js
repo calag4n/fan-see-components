@@ -30,10 +30,10 @@ const App = () => {
       />
       <OutlineInput
         lineColor='#fc2f70'
-        // width='6em'
+        width='36em'
         placeholder='Hey!'
-        // height='8rem'
-        type='text'
+        height='28rem'
+        type='textarea'
         name='surname'
         // resize={true}
       />

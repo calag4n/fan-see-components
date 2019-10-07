@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   }
 
   & input, & textarea {
-    width: ${props => props.width};
+    width: 100%;
     color: white;
     font-size: inherit;
     font-family: inherit;
@@ -30,7 +30,7 @@ const Wrapper = styled.div`
     padding: 0.35em 0.45em;
     border: 1px solid transparent;
     transition: background-color 0.3s ease-in-out;
-    height: ${props => props.height};
+    height: 100%;
   }
 
   & input:focus, & textarea:focus {
