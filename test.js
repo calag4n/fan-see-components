@@ -14,7 +14,28 @@ const App = () => {
         lineColor='#fc2f70'
         // width='6em'
         placeholder='Hey!'
-        height='8rem'
+        // height='8rem'
+        type='text'
+        name='name'
+        // resize={true}
+      />
+      <OutlineInput
+        lineColor='#fc2f70'
+        // width='6em'
+        placeholder='Hey!'
+        // height='8rem'
+        type='text'
+        name='surname'
+        // resize={true}
+      />
+      <OutlineInput
+        lineColor='#fc2f70'
+        // width='6em'
+        placeholder='Hey!'
+        // height='8rem'
+        type='text'
+        name='surname'
+        // resize={true}
       />
     </div>
   )
