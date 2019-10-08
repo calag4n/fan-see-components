@@ -112,6 +112,7 @@ const OutlineInput = ({
   name,
   height,
   type,
+  required,
   resize,
 }) => (
   <Wrapper
@@ -124,7 +125,7 @@ const OutlineInput = ({
     {type === 'textarea' ? (
       <textarea placeholder={placeholder} name={name}   />
     ) : (
-      <input type={type || 'text'} placeholder={placeholder} name={name} id={name} />
+      <input type={type || 'text'} placeholder={placeholder} name={name} id={name} required={required} />
     )}
     <span className='bottom' />
     <span className='right' />
