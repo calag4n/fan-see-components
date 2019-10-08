@@ -124,7 +124,7 @@ const OutlineInput = ({
     {type === 'textarea' ? (
       <textarea placeholder={placeholder} name={name}   />
     ) : (
-      <input type={type || 'text'} placeholder={placeholder} name={name} />
+      <input type={type || 'text'} placeholder={placeholder} name={name} id={name} />
     )}
     <span className='bottom' />
     <span className='right' />
