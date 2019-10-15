@@ -1,6 +1,6 @@
 {
   "name": "fan-see-comp",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "description": "Some beautiful components",
   "main": "dist/index.js",
   "scripts": {
@@ -10,12 +10,7 @@
   },
   "author": "calag4n",
   "license": "ISC",
-  "dependencies": {
-    "prop-types": "^15.7.2",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "styled-components": "^4.4.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.6.2",
     "@babel/core": "^7.6.2",
@@ -30,6 +25,10 @@
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.1.2",
     "prettier": "^1.18.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "styled-components": "^4.4.0",
     "webpack": "^4.41.0",
     "webpack-cli": "^3.3.9"
   },
