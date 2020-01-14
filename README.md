@@ -20,6 +20,21 @@ npm run dev
 
 > With parcel
 
+## Components
+
+### FontChanger
+
+The component need to be the highest in your tree order.
+
+#### Props
+
+|                   |     value       |   required | exemples   
+| -------------     |:---------------:|:----------:|:----------:
+| chidren           |  Your app       |     ✔️      | `<App/>`
+| text              |  An array of strings that refers all the fonts you want to test on your text      |      ✔️     | `['Montserrat', 'Charmonman','cursive']`
+| titles|An array of strings that refers all the fonts you want to test on your titles    |     ✔️      |`['Montserrat', 'Charmonman','cursive']`
+
+
 ## Author
 
 👤 **calag4n**
