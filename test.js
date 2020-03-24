@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div>
       <p>BarsSpan : </p>
-      <BarsSpan barColor='#fc2f70'>Hello</BarsSpan>
+      <BarsSpan spanStyle={{color: 'red', padding: '0.3em 0'}} barColor='#fc2f70'>Hello</BarsSpan>
 
       <p>OutlineInput : </p>
       <OutlineInput

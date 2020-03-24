@@ -41,13 +41,14 @@ const Span = styled.span`
   }
 `
 
-const BarsSpan = ({ children, barColor }) => (
-  <Span barColor={barColor}>{children}</Span>
+const BarsSpan = ({ children, barColor, spanStyle }) => (
+  <Span style={spanStyle} barColor={barColor}>{children}</Span>
 )
 
 BarsSpan.propTypes = {
   children: PropTypes.node.isRequired,
   barColor: PropTypes.string,
+  spanStyle: PropTypes.object,
 }
 
 export default BarsSpan
